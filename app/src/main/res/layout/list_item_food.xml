@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_framework_ed">
+
+    <ImageView
+        android:id="@+id/image_food_list"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/th"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/shape_framework_ed">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/txt_name_food_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="salaomn"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:id="@+id/txt_category_food_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fish"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_calory_food_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22 cal /g"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="4dp">
+
+                <Button
+                    android:id="@+id/btn_edit_food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Edit"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/purple_700"
+                    android:textColor="@color/white"
+                    android:layout_marginEnd="4dp"
+                    android:ems="4"
+                    android:layout_gravity="end"/>
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/close"
+                    android:backgroundTint="@color/purple_700"
+                    android:ems="4"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_gravity="end"/>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/shape_framework">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txt_name_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi, Mohammed"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="current Status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        />
+
+
+        <TextView
+            android:id="@+id/currentStateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:ems="14"
+            android:textColor="@color/purple_700"
+            android:layout_marginTop="4dp"
+            android:padding="10dp"
+            android:hint="Normal (still Good)"
+            style="@style/Widget.AppCompat.EditText"
+            android:background="@drawable/shape_framework_ed2"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="14dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Old Status"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            tools:listitem="@layout/list_item"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+    android:gravity="center">
+    <Button
+        android:id="@+id/btn_add_food"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Add Food"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:layout_marginEnd="4dp"
+        android:ems="8"
+        />
+    <Button
+        android:id="@+id/btn_add_record"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Add Record"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginStart="4dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:ems="8"
+        />
+</LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_view_food"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="View Food"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:ems="16"
+        />
+
+    <TextView
+        android:id="@+id/txt_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/black"
+        android:ems="16"
+
+        />
+
+
+</LinearLayout>

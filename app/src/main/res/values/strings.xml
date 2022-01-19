@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BMI</string>
+    <string name="next"><u>Next</u></string>
+    <string name="logout"><u>Logout</u></string>
+</resources>

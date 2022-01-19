@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity"
+    android:orientation="vertical"
+    android:background="@drawable/shape_framework">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/purple_700"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:ignore="MissingConstraints"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI Analyzer"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Complete Your\n Information"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+   <RadioGroup
+       android:id="@+id/radioSex"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Male"
+           android:textSize="12sp"
+           android:layout_marginEnd="6dp"
+           android:outlineAmbientShadowColor="@color/purple_700"
+           android:shadowColor="@color/purple_700"
+           android:textColor="@color/purple_700"/>
+
+       <RadioButton
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Female"
+           android:textSize="12sp"
+           android:layout_marginStart="12dp"
+           android:outlineAmbientShadowColor="@color/purple_700"
+           android:shadowColor="@color/purple_700"
+           android:textColor="@color/purple_700"/>
+   </RadioGroup>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/ed_weight_kg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:ems="8"
+        android:textColor="@color/purple_700"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="4dp"
+        android:drawableEnd="@drawable/add"
+        android:drawableStart="@drawable/minus"
+        style="@style/Widget.AppCompat.EditText"
+        android:background="@drawable/shape_framework_ed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kg"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Length"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/ed_length_cm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:ems="8"
+
+        android:textColor="@color/purple_700"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="4dp"
+        android:drawableEnd="@drawable/add"
+        android:drawableStart="@drawable/minus"
+        style="@style/Widget.AppCompat.EditText"
+        android:background="@drawable/shape_framework_ed"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+</LinearLayout><LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/ed_dateOfBirth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:ems="14"
+        android:textColor="@color/purple_700"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="26dp"
+        android:padding="4dp"
+        style="@style/Widget.AppCompat.EditText"
+        android:background="@drawable/shape_framework_ed"
+        />
+
+</LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_save_data"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Save Data"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/purple_700"
+        android:textColor="@color/white"
+        android:ems="14"
+        />
+
+
+</LinearLayout>
